@@ -90,7 +90,7 @@ var Movie = React.createClass({
     movie: React.PropTypes.object.isRequired
   },
 
-  render: {
+  render: function() {
     return (React.createElement('li', {key: movie.id},
         React.createElement(MovieTitle, {title: this.props.movie.title}),
         React.createElement(MovieDescription, {desc: this.props.movie.desc}),
